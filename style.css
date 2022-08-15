@@ -49,7 +49,7 @@ nav ul li{
    padding: 34px;
    background-image: url('bg.jpg');
    background-repeat: no-repeat; 
-    background-position: sticky; 
+   background-position: sticky;
 }
 
 .bottom{
@@ -117,8 +117,96 @@ nav ul li{
     transition: opacity 0.4s ease-in;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and ((min-width:500) or (max-width: 1100px)) {
     body {
       background-color: red;
     }
+    .songInfo{
+        position: absolute;
+        bottom: 3px;
+        left: 10vw;
+        font-family: 'Varela Round', sans-serif;
+    }
+    .songItem {
+        height: 50px;
+        width: 333px;
+        display: flex;
+        background-color: white;
+        color: black;
+        margin: 12px -24px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 34px;
+    }
   }
+
+  /* @media only screen and (max-width: 700px) {
+    body {
+      background-color: rgb(139, 132, 132);
+    }
+    .songInfo{
+        position: absolute;
+        bottom: 5px;
+        left:3vh;
+        font-family: 'Varela Round', sans-serif;
+    }
+    .icons{
+        margin-top: 10px; 
+    }
+
+    #myProgressBar{
+        width: 75vw; 
+        height: 0.5vh;
+        cursor: pointer;
+    }
+    .bottom {
+        position: sticky;
+        bottom: 1px;
+        width: 400px;
+        height: 160px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 65px;
+        width: 400px;
+        background-color: black;
+        color: white;
+    }
+    .songItem {
+        height: 60px;
+        width: 371px;
+        background-color: white;
+        color: black;
+        margin: 14px -24px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 34px;
+    }
+    .container {
+        min-height: 72vh;
+        background-color: black;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        display: flex;
+        margin: 23px auto;
+        width: 118%;
+        border-radius: 12px;
+        padding: 34px;
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-position: sticky;
+    }
+    .songItem img {
+        width: 40px;
+        margin: 0px 16px;
+        border-radius: 34px;
+    }
+  } */
